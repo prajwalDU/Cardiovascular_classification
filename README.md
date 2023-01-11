@@ -40,7 +40,7 @@ Checking data info to check any null values found
 
 ![Screenshot (74)](https://user-images.githubusercontent.com/67784512/211742624-bcb6be9e-9132-439f-af73-24a4d3de4b3c.png)
 
-** Missing value treatment**
+**Missing value treatment**
 
 we found that some columns contain null values. So we has to treating it with median or mean, for this problem we use median.
 
@@ -83,6 +83,30 @@ Checking our dependent variable value counts.
  Handling class imbalance by Oversampling followed by removing tomek link.
  
  Define a function to train the input model and print evalution matrix.
+ 
+ Fitting multiple algorithms to test which model given better result and how they act.
+ 
+ 1. Logistic Regression
+ 2. Naive Bayes Classifier
+ 3. Support vector Classifier
+ 4. Random Forest Classifier
+ 5. XGBoost Classifier
+ 6. KNN Classifer
+ 
+ 
+ # Conclusion :
+ 
+ If we want to completely avoid any situations where the patient has heart disease, a high recall is desired. Whereas if we want to avoid treating a patient with no heart diseases a high precision is desired.
+ 
+Assuming that in our case the patients who were incorrectly classified as suffering from heart disease are equally important since they could be indicative of some other ailment, so we want a balance between precision and recall and a high f1 score is desired.
+
+Since we have added synthetic datapoints to handle the huge class imbalance in training set, the data distribution in train and test are different so the high performance of models in the train set is due to the train-test data distribution mismatch and not due to overfitting.
+
+Best performance of Models on test data based on evaluation metrics for class 1: 
+1. Recall - SVC
+2. Precision - Naive Bayes Classifier
+3. F1 Score - Logistic Regression, XGBoost
+4. Accuracy - Naive Bayes Classifier
  
  
 
