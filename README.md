@@ -108,7 +108,7 @@ Best performance of Models on test data based on evaluation metrics for class 1:
 3. F1 Score - Logistic Regression, XGBoost
 4. Accuracy - Naive Bayes Classifier
  
- 
+ **Support vector classifier gave the best Recall of 71%.**
 
 
 
